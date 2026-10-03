@@ -1,0 +1,38 @@
+AI PARKINSON'S DRUG REPURPOSING 360
+PROJECT STRUCTURE MANIFEST
+Version: 0.1.0
+======================================================================
+
+00_system_specification
+01_environment
+02_data_model
+03_candidate_library
+04_evidence_ingestion
+05_rag
+06_ontology
+07_knowledge_graph
+08_target_validation
+09_mechanism_analysis
+10_binding
+11_efficacy
+12_admet_safety
+13_biomarkers
+14_patient_stratification
+15_clinical_intelligence
+16_failure_analysis
+17_biology_deficit
+18_information_gain
+19_candidate_selection
+20_validation
+21_reports
+22_logs
+data/raw
+data/processed
+data/evidence
+data/metadata
+src
+notebooks
+tests
+configs
+results
+docs

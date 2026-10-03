@@ -1,0 +1,6 @@
+PROJECT: AI Parkinson's Drug Repurposing 360
+PROJECT_VERSION: 0.1.0
+SPECIFICATION_VERSION: 0.1.0
+DOCUMENT: System Specification
+STATUS: CREATED
+CODE: 2

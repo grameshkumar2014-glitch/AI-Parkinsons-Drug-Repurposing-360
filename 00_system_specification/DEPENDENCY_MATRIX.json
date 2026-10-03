@@ -1,0 +1,156 @@
+[
+  {
+    "phase_id": "P0",
+    "phase": "Project Definition",
+    "dependencies": "None",
+    "validation": "Project charter and system specification validated",
+    "status": "COMPLETED"
+  },
+  {
+    "phase_id": "P1",
+    "phase": "Environment & Reproducibility",
+    "dependencies": "P0",
+    "validation": "Environment health check passes",
+    "status": "NOT_STARTED"
+  },
+  {
+    "phase_id": "P2",
+    "phase": "Data Model",
+    "dependencies": "P0, P1",
+    "validation": "Data schemas validated",
+    "status": "NOT_STARTED"
+  },
+  {
+    "phase_id": "P3",
+    "phase": "Candidate Library",
+    "dependencies": "P2",
+    "validation": "Candidate ingestion and schema validation passes",
+    "status": "NOT_STARTED"
+  },
+  {
+    "phase_id": "P4",
+    "phase": "Evidence Ingestion",
+    "dependencies": "P2, P3",
+    "validation": "Evidence records have provenance",
+    "status": "NOT_STARTED"
+  },
+  {
+    "phase_id": "P5",
+    "phase": "RAG Infrastructure",
+    "dependencies": "P4",
+    "validation": "Retrieval test passes",
+    "status": "NOT_STARTED"
+  },
+  {
+    "phase_id": "P6",
+    "phase": "Parkinson's Ontology",
+    "dependencies": "P2, P4",
+    "validation": "Ontology entities and relationships validated",
+    "status": "NOT_STARTED"
+  },
+  {
+    "phase_id": "P7",
+    "phase": "Knowledge Graph",
+    "dependencies": "P6",
+    "validation": "Graph integrity checks pass",
+    "status": "NOT_STARTED"
+  },
+  {
+    "phase_id": "P8",
+    "phase": "Target Validation",
+    "dependencies": "P4, P6, P7",
+    "validation": "Target evidence mapped and classified",
+    "status": "NOT_STARTED"
+  },
+  {
+    "phase_id": "P9",
+    "phase": "Mechanism Analysis",
+    "dependencies": "P8",
+    "validation": "Mechanistic evidence profile generated",
+    "status": "NOT_STARTED"
+  },
+  {
+    "phase_id": "P10",
+    "phase": "Binding & Target Engagement",
+    "dependencies": "P8, P9",
+    "validation": "Binding/engagement evidence classified",
+    "status": "NOT_STARTED"
+  },
+  {
+    "phase_id": "P11",
+    "phase": "Efficacy Analysis",
+    "dependencies": "P9, P10",
+    "validation": "Preclinical and human efficacy evidence classified",
+    "status": "NOT_STARTED"
+  },
+  {
+    "phase_id": "P12",
+    "phase": "ADMET & Safety",
+    "dependencies": "P3, P4",
+    "validation": "Safety and ADMET profile generated",
+    "status": "NOT_STARTED"
+  },
+  {
+    "phase_id": "P13",
+    "phase": "Biomarkers",
+    "dependencies": "P6, P8, P11",
+    "validation": "Biomarker evidence mapped",
+    "status": "NOT_STARTED"
+  },
+  {
+    "phase_id": "P14",
+    "phase": "Patient Stratification",
+    "dependencies": "P13",
+    "validation": "Candidate-to-patient subgroup relationships validated",
+    "status": "NOT_STARTED"
+  },
+  {
+    "phase_id": "P15",
+    "phase": "Clinical Intelligence",
+    "dependencies": "P4, P11, P12, P13",
+    "validation": "Clinical trial evidence and outcomes mapped",
+    "status": "NOT_STARTED"
+  },
+  {
+    "phase_id": "P16",
+    "phase": "Failure Analysis",
+    "dependencies": "P11, P12, P15",
+    "validation": "Negative and contradictory evidence captured",
+    "status": "NOT_STARTED"
+  },
+  {
+    "phase_id": "P17",
+    "phase": "Biology Deficit",
+    "dependencies": "P8, P9, P13, P14, P15, P16",
+    "validation": "Uncertainty and biological gaps documented",
+    "status": "NOT_STARTED"
+  },
+  {
+    "phase_id": "P18",
+    "phase": "Information Gain",
+    "dependencies": "P17",
+    "validation": "Information-gain framework validated",
+    "status": "NOT_STARTED"
+  },
+  {
+    "phase_id": "P19",
+    "phase": "Candidate Selection & Ranking",
+    "dependencies": "P10, P11, P12, P13, P14, P15, P16, P17, P18",
+    "validation": "Ranking reproducibility test passes",
+    "status": "NOT_STARTED"
+  },
+  {
+    "phase_id": "P20",
+    "phase": "Validation",
+    "dependencies": "P19",
+    "validation": "Independent validation checks pass",
+    "status": "NOT_STARTED"
+  },
+  {
+    "phase_id": "P21",
+    "phase": "Reports & GitHub Release",
+    "dependencies": "P20",
+    "validation": "Final report and repository release validated",
+    "status": "NOT_STARTED"
+  }
+]

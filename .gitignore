@@ -1,0 +1,91 @@
+# ============================================================
+# AI Parkinson's Drug Repurposing 360
+# Git Ignore
+# ============================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Google / Colab
+.drive/
+.cache/
+
+# Large data
+data/raw/*
+data/processed/*
+data/evidence/*
+*.csv
+*.tsv
+*.parquet
+*.h5
+*.hdf5
+*.feather
+*.sqlite
+*.db
+
+# Exceptions: keep directory placeholders
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/evidence/.gitkeep
+
+# Model files
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# Large archives
+*.zip
+*.tar
+*.gz
+*.7z
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Secrets / credentials
+*.pem
+*.key
+credentials.json
+token.json
+
+# Generated outputs
+results/generated/
+results/cache/
+
+# Local configuration
+local_config/
